@@ -3,25 +3,31 @@
     "author": "Sublime HQ Pty Ltd, Dmitri Voronianski",
     "variables":
     {
-        "blue": "hsl(60, 7%, 50%)",
-        "blue-vibrant": "hsl(11, 100%, 49%)",
-        "blue2": "hsl(11, 100%, 49%)",
-        "green": "hsl(11, 100%, 49%)",
+        "default1": "#B399D1",
+        "default2": "#0047AB",
+        "default3": "#30ba8f",
+
+        "default": "var(default2)",
+
+        "blue": "hsl(60, 0%, 60%)",
+        "blue-vibrant": "var(default)",
+        "blue2": "var(default)",
+        "green": "var(default)",
         "grey": "hsl(0, 3%, 94%)",
-        "grey2": "hsl(11, 8%, 30%)",
+        "grey2": "hsl(60, 0%, 25%)",
         "grey3": "hsl(0, 3%, 94%)",
-        "orange": "hsl(11, 100%, 49%)",
+        "orange": "var(default)",
         "orange2": "hsl(32, 85%, 55%)",
         "orange3": "hsl(40, 94%, 68%)",
-        "pink": "hsl(11, 100%, 49%)",
-        "red": "hsl(11, 100%, 49%)",
+        "pink": "var(default)",
+        "red": "var(default)",
         "red2": "hsl(0, 3%, 94%)",
         "red3": "hsl(0, 3%, 94%)",
         "white": "hsl(60, 7%, 35%)",
-        "white2": "hsl(11, 100%, 49%)",
-        "white3": "hsla(204, 10%, 86%, 0.1)",
+        "white2": "var(default)",
+        "white3": "hsla(0, 10%, 86%, 0.1)",
         "white4": "hsl(60, 3%, 7%)",
-        "white5": "hsl(60, 3%, 7%)"
+        "white5": "hsl(213, 35%, 3%)"
     },
     "globals":
     {
@@ -70,7 +76,8 @@
         {
             "name": "Number",
             "scope": "constant.numeric",
-            "foreground": "var(orange)"
+            "foreground": "var(orange)",
+            "font_style": "italic"
         },
         {
             "name": "Number suffix",
